@@ -1,0 +1,117 @@
+starting worker pid=7816 on localhost:11203 at 17:19:55.332
+starting worker pid=7460 on localhost:11203 at 17:19:55.469
+starting worker pid=7992 on localhost:11203 at 17:19:55.642
+starting worker pid=7748 on localhost:11203 at 17:19:55.781
+starting worker pid=2188 on localhost:11203 at 17:19:55.920
+starting worker pid=5108 on localhost:11203 at 17:19:56.058
+starting worker pid=3888 on localhost:11203 at 17:19:56.194
+starting worker pid=6208 on localhost:11203 at 17:19:56.328
+Loading required package: mvtnorm
+Loading required package: Matrix
+Loading required package: mvtnorm
+Loading required package: Matrix
+Loading required package: mvtnorm
+Loading required package: Matrix
+Loading required package: mvtnorm
+Loading required package: Matrix
+Loading required package: mvtnorm
+Loading required package: Matrix
+Loading required package: mvtnorm
+Loading required package: Matrix
+Loading required package: mvtnorm
+Loading required package: Matrix
+Loading required package: mvtnorm
+Loading required package: Matrix
+Loading required package: stats4
+Loading required package: gmm
+Loading required package: sandwich
+Loading required package: stats4
+Loading required package: gmm
+Loading required package: sandwich
+Loading required package: stats4
+Loading required package: gmm
+Loading required package: sandwich
+Loading required package: stats4
+Loading required package: gmm
+Loading required package: sandwich
+Loading required package: stats4
+Loading required package: stats4
+Loading required package: gmm
+Loading required package: sandwich
+Loading required package: gmm
+Loading required package: sandwich
+Loading required package: stats4
+Loading required package: gmm
+Loading required package: sandwich
+Loading required package: stats4
+Loading required package: gmm
+Loading required package: sandwich
+[1] "Cluster S03 Phase 1 411.01348400116"
+[1] "Cluster S05 Phase 1 418.864636898041"
+[1] "Cluster 225 Phase 1 453.203778028488"
+[1] "Cluster 221 Phase 1 467.046000003815"
+[1] "Cluster S04 Phase 1 597.603059053421"
+[1] "Cluster 223 Phase 1 762.801480054855"
+[1] "Cluster S03 Phase 2 404.457760810852"
+[1] "Cluster S02 Phase 1 817.812350034714"
+[1] "Cluster S05 Phase 2 435.471753120422"
+[1] "Cluster S06 Phase 1 927.663082122803"
+[1] "Cluster 225 Phase 2 533.965377807617"
+[1] "Cluster 221 Phase 2 560.2047560215"
+[1] "Cluster S03 Phase 3 384.535468101501"
+[1] "Cluster S04 Phase 2 605.59459900856"
+[1] "Cluster S05 Phase 3 352.203817844391"
+[1] "Cluster 225 Phase 3 458.98281121254"
+[1] "Cluster 221 Phase 3 486.498445034027"
+[1] "Cluster 223 Phase 2 757.934834003448"
+[1] "Cluster S03 Phase 4 359.131325960159"
+[1] "Cluster S05 Phase 4 391.882794141769"
+[1] "Cluster S02 Phase 2 805.512771129608"
+[1] "Cluster S06 Phase 2 720.119736909866"
+[1] "Cluster S04 Phase 3 620.695670127869"
+[1] "Cluster S03 Phase 5 316.115195035934"
+[1] "Cluster 225 Phase 4 454.380400896072"
+[1] "Cluster 221 Phase 4 447.671099901199"
+[1] "Cluster S05 Phase 5 405.512210845947"
+[1] "Cluster 223 Phase 3 732.020670890808"
+[1] "Cluster S06 Phase 3 674.735897064209"
+[1] "Cluster 225 Phase 5 463.969033956528"
+[1] "Cluster S02 Phase 3 753.268823862076"
+[1] "Cluster 221 Phase 5 458.899538040161"
+[1] "Cluster S04 Phase 4 635.157114982605"
+[1] "Cluster 223 Phase 4 635.458381891251"
+[1] "Cluster S06 Phase 4 698.048994064331"
+[1] "Cluster S04 Phase 5 641.143947124481"
+[1] "Cluster S02 Phase 4 747.341611146927"
+[1] "Cluster 223 Phase 5 644.028722047806"
+[1] "Cluster S06 Phase 5 643.972121953964"
+[1] "Cluster S02 Phase 5 748.297200918198"
+[1] "Cluster S03 Phase 6 8826.59588694572"
+[1] "Cluster S05 Phase 6 10252.0934901237"
+[1] "Cluster 225 Phase 6 10104.2678480148"
+[1] "Cluster 221 Phase 6 12054.9361450672"
+[1] "Cluster S04 Phase 6 14312.6833610535"
+[1] "Cluster S06 Phase 6 14083.3116259575"
+[1] "Cluster 223 Phase 6 14481.1589040756"
+[1] "Cluster S02 Phase 6 15496.0584609509"
+Warning messages:
+1: In rexp(1, prob_to_rate) : NAs produced
+2: In rexp(1, prob_to_rate) : NAs produced
+3: In rexp(1, prob_to_rate) : NAs produced
+4: In rexp(1, prob_to_rate) : NAs produced
+5: In rexp(1, prob_to_rate) : NAs produced
+6: In rexp(1, prob_to_rate) : NAs produced
+7: In rexp(1, prob_to_rate) : NAs produced
+8: In rexp(1, prob_to_rate) : NAs produced
+9: In rexp(1, prob_to_rate) : NAs produced
+10: In rexp(1, prob_to_rate) : NAs produced
+Warning messages:
+1: In rexp(1, prob_to_rate) : NAs produced
+2: In rexp(1, prob_to_rate) : NAs produced
+3: In rexp(1, prob_to_rate) : NAs produced
+4: In rexp(1, prob_to_rate) : NAs produced
+5: In rexp(1, prob_to_rate) : NAs produced
+6: In rexp(1, prob_to_rate) : NAs produced
+7: In rexp(1, prob_to_rate) : NAs produced
+8: In rexp(1, prob_to_rate) : NAs produced
+9: In rexp(1, prob_to_rate) : NAs produced
