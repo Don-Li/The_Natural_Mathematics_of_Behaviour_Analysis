@@ -2,7 +2,9 @@
 title: "The Natural Mathematics of Behaviour Analysis Readme"
 author: "Don Li"
 date: "17 December 2017"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ## The Natural Mathematics of Behaviour Analysis
@@ -71,7 +73,7 @@ We use the `CAB`, `data.table`, and `tmvtnorm` libraries for our analyses. The `
     + Simulates COR at the posterior subsamples.
     
 ## References
-* Catania, A. C. (2005). The operant reserve: A computer simulation in (accelerated) real time. Behavioural Processes, 69(2), 257–278. https://doi.org/10.1016/j.beproc.2005.02.009
+* Catania, A. C. (2005). The operant reserve: A computer simulation in (accelerated) real time. Behavioural Processes, 69(2), 257-278. https://doi.org/10.1016/j.beproc.2005.02.009
 * Li, Hautus, & Elliffe (in press). The Natural Mathematics of Behaviour Analysis. The Journal of the Experimental Analysis of Behaviour.
-* Marjoram, P., Molitor, J., Plagnol, V., & Tavare, S. (2003). Markov chain Monte Carlo without likelihoods. Proceedings of the National Academy of Sciences, 100(26), 15324–15328. https://doi.org/10.1073/pnas.0306899100
+* Marjoram, P., Molitor, J., Plagnol, V., & Tavare, S. (2003). Markov chain Monte Carlo without likelihoods. Proceedings of the National Academy of Sciences, 100(26), 15324-15328. https://doi.org/10.1073/pnas.0306899100
 
