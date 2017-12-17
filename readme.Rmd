@@ -1,0 +1,71 @@
+---
+title: "The Natural Mathematics of Behaviour Analysis Readme"
+author: "Don Li"
+date: "17 December 2017"
+output: html_document
+---
+
+## The Natural Mathematics of Behaviour Analysis
+
+The code that is documented here was used to fit Catania's Operant Reserve (COR; Catania, 2005) to some single VI schedule data using a Markov Chain Monte Carlo scheme for  Approximate Bayesian Computation (Marjoram, Molitor, Plagnol, & Tavare, 2003). Here, we describe the contents of each file to facilitate navigation through the directory.
+
+For the paper in which this analysis was presented, see Li, Hautus, and Elliffe (in press).
+
+## Libraries
+
+We use the `CAB`, `data.table`, and `tmvtnorm` libraries for our analyses. The `CAB` package is available at <https://github.com/Don-Li/CAB>; it is now deprecated because I have changed the focus of the package. To parallelise the code, we used the `foreach` and `doParallel` packages. All the packages mentioned other than `CAB` are available on CRAN.
+
+## Data cleaning and data
+
+* `data_cleaning.R`
+    + Contains the code used for computing the necessary summary statistics for model fitting from the raw event records.
+* `cost_function.R`
+    + Contains three functions `cost_function`, `summary_statistics`, and `compute_cost2`.
+    + `cost_function` computes the disparity between the observed and predicted summary statistics.
+    + `summary_statistics` computes the values of the summary statistics.
+    + `compute_cost2` calls the two above functions, tidies up the output and records the cost values.
+* `behavioural_profile.RData`
+    + Contains a `data.table` with the summary statistics for each subject.
+* `COR_params.R`
+    + Gets the model parameters. Saves a file `COR_params.RData`.
+* `COR_params.RData`
+    + Contains parameters for COR. Includes important things like the initial response rates. Also serves as a template for the entire parameter list, so it contains things like `reserve_level`, which get updated while the model runs.
+
+## Cost survey and outputs
+
+* `S04_transition_survey.R`
+    + Contains the code for doing the cost survey for subject S04.
+    + Outputs the file `survey_results4.RData"`, not included in git repo because of size.
+    + Also periodically saves the intermediate results.
+* `ABC_params.RData`
+    + Computed from the outputs of the survey results. See Li, Hautus, and Elliffe (in press) for details.
+
+## COR functions
+
+* `COR.do.R`
+    + Contains two functions, `COR.do` and `simulate_COR2`
+    + `COR.do` runs the model. Returns an event record.
+    + `simulate_COR2`calls `COR.do` for a list of conditions (i.e. all the sessions) and returns a big event record.
+* `COR_fx.R`
+    + Contains three functions.
+    + `DOR` for the delay of reinforcement gradient. Exponential.
+    + `depletion` constant depletion function.
+    + `rft_schedule` reinforcement schedule.
+    + `emission` emission function.
+    + These functions are in a list `COR_fx`.
+
+## ABC
+
+* `ABC_mcmc.R`
+    + Contains functions for doing ABC.
+    + `do.mcmc` contains the main code for running the MCMC chain. Does all of the burn-in and proposal and threshold adjustments.
+    + `do.accept_ratio` computes the acceptance ratio.
+* `main_ABC.R`
+    + Loads all the necessary functions and data and runs the ABC MCMC procedure.
+    + Saves results in `fit_results.RData` with periodic saves for each subject.
+
+## Posterior evaluation
+
+* `posterior_predictive.R`
+    + Thins the MCMC chain and subsamples the posteriors.
+    + Simulates COR at the posterior subsamples.
